@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form>
+	
+	<fieldset
+		name="editar">
+
+		<field 
+			name="id"
+			type="hidden"
+			/>
+
+		<field 
+			name="nome_usuario"
+			type="text"
+			label="COM_USUAROIMAGINE_FIELD_NOME_USUARIO_GERENCIAR_LABEL"
+			description="COM_USUAROIMAGINE_FIELD_NOME_USUARIO_GERENCIAR_DESC"
+			size="40"
+			class="inputbox nome_usuario"
+			default=""
+			required="true"
+			/>
+
+		<field 
+			name="nome_completo"
+			type="text"
+			label="COM_USUAROIMAGINE_FIELD_NOME_COMPLETO_GERENCIAR_LABEL"
+			description="COM_USUAROIMAGINE_FIELD_NOME_COMPLETO_GERENCIAR_DESC"
+			size="40"
+			class="inputbox nome_completo"
+			default=""
+			required="true"
+			/>
+
+		<field 
+			name="email"
+			type="email"
+			label="COM_USUAROIMAGINE_FIELD_EMAIL_GERENCIAR_LABEL"
+			description="COM_USUAROIMAGINE_FIELD_EMAIL_GERENCIAR_DESC"
+			size="40"
+			class="inputbox email"
+			default=""
+			required="true"
+			/>
+
+		<field 
+			name="telefone"
+			type="text"
+			label="COM_USUAROIMAGINE_FIELD_TELEFONE_GERENCIAR_LABEL"
+			descriptio="COM_USUAROIMAGINE_FIELD_TELEFONE_GERENCIAR_DESC"
+			size="40"
+			class="inputbox telefone"
+			default=""
+			/>
+
+		<field 
+			name="version_note"
+			type="text"
+			label="JGLOBAL_FIELD_VERSION_NOTE_LABEL"
+			description="JGLOBAL_FIELD_VERSION_NOTE_DESC"
+			class="inputbox"
+			size="45"
+			labelclass="control-label"
+			/>
+
+	</fieldset>
+
+	<field 
+		name="description"
+		type="editor"
+		label="COM_USUARIOIMAGINE_CONFIG_CAMPO_DESCRIPTION_LABEL"
+		description="COM_USUARIOIMAGINE_CONFIG_CAMPO_DESCRIPTION_DESC"
+		filter="JComponent::filterText"
+		buttons="true"
+		/>
+
+</form>

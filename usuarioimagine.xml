@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extension type="component" version="3.9" method="upgrade">
+	
+	<name>COM_USUARIOIMAGINE</name>
+
+	<author>Samuel Edson</author>
+	<authorEmail>samueledshotmailgm@gmail.com</authorEmail>
+	<authorUrl>www.imcdigital.com.br</authorUrl>
+	<creationDate>Agosto de 2021</creationDate>
+	<license>Projeto sobre licensa GNU</license>
+	<copyright>Todos os direito reservados.</copyright>
+
+	<description>COM_USUARIOIMAGINE_DESC</description>
+
+	<version>2.6.0</version>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<update>
+		
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+
+	</update>
+
+	<files folder="site">
+		
+		<filename>index.html</filename>
+		<filename>usuarioimagine.php</filename>
+		<filename>controller.php</filename>
+
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>language</folder>
+
+	</files>
+
+	<media destination="com_usuarioimagine" folder="media">
+		<filename>index.html</filename>
+
+		<folder>js</folder>
+	</media>
+
+	<languages folder="site/language">
+		<language tag="pt-BR">pt-BR/pt-BR.com_usuarioimagine.ini</language>
+	</languages>
+
+	<administration>
+		
+		<menu link="index.php?option=com_usuarioimagine">COM_USUARIOIMAGINE_MENU</menu>
+
+		<files folder="admin">
+			
+			<filename>index.html</filename>
+			<filename>usuarioimagine.php</filename>
+			<filename>controller.php</filename>
+			<filename>config.xml</filename>
+
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>language</folder>
+
+		</files>
+
+		<languages folder="admin/language">
+			<language tag="pt-BR">pt-BR/pt-BR.com_usuarioimagine.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_usuarioimagine.sys.ini</language>
+		</languages>
+
+	</administration>
+
+</extension>

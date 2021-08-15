@@ -1,0 +1,4 @@
+# NOVA MODIFICAÇÃO
+# ATUALIZAÇÃO 2.0.15
+
+ALTER TABLE `#__usuariosimagine` ADD COLUMN `params` VARCHAR(255) NOT NULL DEFAULT '';

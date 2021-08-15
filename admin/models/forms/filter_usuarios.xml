@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form>
+	
+	<fields
+		name="filter">
+
+	<field 
+		name="search" 
+		type="text"
+		label="COM_BANNERS_SEARCH_IN_TITLE"
+		hint="COM_USUARIOIMAGINE_TITULO_PESQUISA"
+		class="js-stools-search-string"
+		/>
+		
+	</fields>
+
+	<fileds
+		name="list">
+
+		<field 
+			name="fullordering"
+			type="list"
+			label="COM_USUARIOIMAGINE_CAMPO_LISTA_FULLORDERING_LABEL"
+			description="COM_USUARIOIMAGINE_CAMPO_LISTA_FULLORDERING_DESC"
+			onchange="this.form.submit();"
+			default="nome_completo ASC"
+			>
+			
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="nome_usuario ASC">COM_USUARIOIMAGINE_CAMPO_NOME_USUARIO_ASC</option>
+			<option value="nome_usuario DESC">COM_USUARIOIMAGINE_CAMPO_NOME_USUARIO_DESC</option>
+			<option value="nome_completo ASC">COM_USUARIOIMAGINE_CAMPO_NOME_COMPLETO_ASC</option>
+			<option value="nome_completo DESC">COM_USUARIOIMAGINE_CAMPO_NOME_COMPLETO_DESC</option>
+			<option value="email ASC">COM_USUARIOIMAGINE_CAMPO_EMAIL_ASC</option>
+			<option value="email DESC">COM_USUARIOIMAGINE_CAMPO_EMAIL_DESC</option>
+			<option value="id ASC">COM_USUARIOIMAGINE_CAMPO_ID_ASC</option>
+			<option value="id DESC">COM_USUARIOIMAGINE_CAMPO_ID_DESC</option>
+
+		</field>
+		
+		<field 
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="10"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_USUARIOIMAGINE_CAMPO_LIMIT_DESCRICAO"
+			onchange="this.form.submit();"
+			/>
+
+	</fileds>
+
+</form>
